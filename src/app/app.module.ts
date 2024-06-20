@@ -28,6 +28,7 @@ import {AuthModule, StsConfigLoader} from "angular-auth-oidc-client";
 import { VideoDetailsComponent } from './components/video-details/video-details.component';
 import { HomeComponent } from './components/home/home.component';
 import {MatCardModule} from "@angular/material/card";
+import { MatMenuModule } from '@angular/material/menu';
 
 // @ts-ignore
 @NgModule({
@@ -61,6 +62,7 @@ import {MatCardModule} from "@angular/material/card";
     VgBufferingModule,
     MatSnackBarModule,
     MatToolbarModule,
+    MatMenuModule,
     AuthModule.forRoot({
       config: {
         authority: 'https://dev-nxh607qdpzu4gfqp.us.auth0.com',

@@ -5,9 +5,14 @@
       <img src="assets/images/youtube-logo.png" class="yt-logo"/>
       <h2>YouTube - Clone</h2>
     </div>
-    <div>
+    <div id="rightNav">
       <mat-icon id="video_call_logo" (click)="videoUploadPage()">video_call</mat-icon>
-      <mat-icon *ngIf="isAuthenticated; else NoAuth">account_circle</mat-icon>
+      <mat-icon *ngIf="isAuthenticated; else NoAuth" [matMenuTriggerFor]="beforeMenu">account_circle</mat-icon>
+      
+      <mat-menu #beforeMenu="matMenu" xPosition="before">
+        <button mat-menu-item (click)="logout()">Logout</button>
+      </mat-menu>
+     
       <ng-template #NoAuth>
         <button mat-raised-button (click)="login()">Login</button>
       </ng-template>

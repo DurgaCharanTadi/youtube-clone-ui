@@ -39,3 +39,7 @@
 #video_call_logo:hover{
   cursor: pointer;
 }
+#rightNav{
+  display: flex;
+  align-items: center;
+}
