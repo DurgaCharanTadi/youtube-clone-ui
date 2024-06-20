@@ -24,3 +24,11 @@
   display: grid;
   grid-template-columns: auto auto auto;
 }
+.ellipsis{
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+mat-card:hover{
+  cursor: pointer;
+}

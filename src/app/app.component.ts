@@ -12,6 +12,7 @@ export class AppComponent {
 
   constructor(private oidcSecurityService: OidcSecurityService,
               private stsConfigLoader: StsConfigLoader) {
+                    
   }
 
   ngOnInit() {
