@@ -31,4 +31,8 @@ export class HeaderComponent implements OnInit{
   videoUploadPage() {
     this.router.navigateByUrl("/video-upload");
   }
+
+  openHome(){
+     this.router.navigateByUrl("/");
+  }
 }

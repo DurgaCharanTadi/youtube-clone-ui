@@ -58,6 +58,7 @@ export class SaveVideoDetailsComponent {
 
   thumbnailSelected: boolean = false;
   videoAvailable: boolean = false;
+  videoSaved: boolean = false;
 
   add(event: MatChipInputEvent): void {
     const value = (event.value || '').trim();
@@ -127,6 +128,7 @@ export class SaveVideoDetailsComponent {
 
   saveVideoDetails() {
     console.log("this.thumbnailUrl: " + this.thumbnailUrl);
+    this.videoSaved = true;
     // @ts-ignore
     const videoMetaData: videoDTO = {
       "id": this.videoId,

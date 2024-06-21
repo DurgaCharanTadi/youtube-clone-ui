@@ -25,6 +25,13 @@ export class VideoDetailsComponent {
         console.log(this.videoUrl);
       }
     );
+
+    this.videoUploadService.getAllVideos().subscribe(
+      res => {
+        this.allVideos = res;
+        console.log(this.allVideos);
+      }
+    );
   }
   videoId: string;
   videoUrl!: string;
@@ -32,4 +39,16 @@ export class VideoDetailsComponent {
   videoAvailable: boolean = false;
   videoTitle!: string;
   videoDescription!: string;
+  currentUrl !: string;
+
+  allVideos: any[] = [];
+  video: any;
+
+  openVideo(video: any){
+    this.currentUrl = "/video-details/"+ video.id;
+
+    this.router.navigateByUrl('/', {skipLocationChange: true}).then(() => {
+      this.router.navigate([this.currentUrl]);
+  });
+  }
 }

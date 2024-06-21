@@ -1,6 +1,11 @@
-.center{
-  width: 50vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.centerFile, .centered{
+  width: 70vw;
+  margin: 0 auto;
+} 
+#fileUploadText{
+  margin: 10px;
+  color: black;
+}
+#spinner{
+  margin: auto;
 }

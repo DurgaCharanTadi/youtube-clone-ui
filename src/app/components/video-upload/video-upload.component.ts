@@ -13,6 +13,7 @@ export class VideoUploadComponent {
   public files: NgxFileDropEntry[] = [];
   fileUploaded: boolean = false;
   fileEntry: FileSystemFileEntry | undefined;
+  fileUploadedAWS: boolean = false;
 
   constructor(private videoUploadService:VideoUploadService, private router:Router) {
   }
@@ -66,6 +67,7 @@ export class VideoUploadComponent {
   uploadVideo() {
     this.fileEntry?.file(file => {
         console.log("uploadVideo inside 1");
+        this.fileUploadedAWS = true;
         this.videoUploadService.videoUpload(file)
           .subscribe(
             res =>

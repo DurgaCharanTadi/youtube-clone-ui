@@ -1,6 +1,20 @@
 .video-player{
   height: 415px;
 }
-/*.video-player-mainDiv{*/
-/*  margin-left: 30px;*/
-/*}*/
+#allVideosList, .video-player-mainDiv{
+  padding-left: 20px;
+}
+#allVideosList img{
+ width: 398px;
+}
+mat-card{
+  width: 400px;
+  margin-bottom: 20px;
+  border-width: 1.4px;
+ }
+.mat-mdc-card-header{ 
+ padding: 0 5px!important;
+}
+img:hover{
+  cursor: pointer;
+}

@@ -1,3 +1,18 @@
 .video-player{
   height: 415px;
 }
+.saveVideoDetailsUI{
+  margin: 0 25px;
+}
+mat-form-field{
+  width: 95%;
+}
+#spinner{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+}

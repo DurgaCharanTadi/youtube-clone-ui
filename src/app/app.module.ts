@@ -29,6 +29,7 @@ import { VideoDetailsComponent } from './components/video-details/video-details.
 import { HomeComponent } from './components/home/home.component';
 import {MatCardModule} from "@angular/material/card";
 import { MatMenuModule } from '@angular/material/menu';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 // @ts-ignore
 @NgModule({
@@ -63,6 +64,7 @@ import { MatMenuModule } from '@angular/material/menu';
     MatSnackBarModule,
     MatToolbarModule,
     MatMenuModule,
+    MatProgressSpinnerModule,
     AuthModule.forRoot({
       config: {
         authority: 'https://dev-nxh607qdpzu4gfqp.us.auth0.com',
